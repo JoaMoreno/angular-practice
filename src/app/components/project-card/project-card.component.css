@@ -1,0 +1,16 @@
+.color-primary{
+    --main-bg-color: #4fd1c5;
+}
+.color-secondary{
+    --main-bg-color: #fbd38d;
+}
+.color-none{
+    --main-bg-color: #cbd5e0;
+}
+.box-color{
+    width: 15px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: var(--main-bg-color);
+    transform: translate(0,50%);
+}
