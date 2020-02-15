@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { ProjectDescriptionComponent } from './components/project-description/project-description.component';
+import { ProjectMainContainerComponent } from './components/project-main-container/project-main-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    ProjectDescriptionComponent,
+    ProjectMainContainerComponent
   ],
   imports: [
     BrowserModule,
