@@ -14,3 +14,8 @@
     background-color: var(--main-bg-color);
     transform: translate(0,50%);
 }
+.flex-project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
