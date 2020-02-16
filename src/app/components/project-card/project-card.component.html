@@ -1,1 +1,29 @@
-<p>project-card works!</p>
+<div class="card-container">
+    <p class="project-title">{{project.name}} </p>
+    <p class="project-date">{{project.date}} </p>
+    <div class="project-task">
+        <div>
+            <p>{{project.tasks}}</p>
+            <i class="fas fa-folder"></i>
+        </div>
+        <div>
+            <p>{{project.subtasks}}</p>
+            <i class="fas fa-folder"></i>
+        </div>
+    </div>
+    <div class="project-status">
+        <div>
+            <p>1</p>
+            <div class="box-color"></div>
+        </div>
+        <div>
+            <p>0</p>
+            <div class="box-color"></div>
+        </div>
+        <div>
+            <p>4</p>
+            <div class="box-color"></div>
+        </div>
+    </div>
+    <p class="project-option">. <br>.<br>. </p>
+</div>

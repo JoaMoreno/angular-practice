@@ -1,0 +1,71 @@
+.card-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title date option"
+                         "tasks status option";
+
+    width: 250px;
+    height: 100px;
+    background: #edf2f7;
+
+    border-radius: 10px;
+
+    color: #2d3748;
+    box-shadow: 0 0 10px #2d37482a;
+}
+.project-title{
+    grid-area: title;
+    display: flex;
+    align-items: center;
+
+    margin: 0 25px;
+}
+
+.project-date{
+    grid-area: date;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: .8rem;
+    /* Cambiar color no es material design */
+    color: #646b74;
+}
+
+.project-task{
+    grid-area: tasks;
+    display: flex;
+    align-items: center;
+
+    margin: 0 25px;
+}
+.project-task > div {
+    margin-right: 15px;
+}
+.color-primary{
+    /* Establecer variables bg-primary & secondary */
+    background: red;
+}
+.project-status{
+    grid-area: status;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+.project-status .box-color{    
+    transform: translate(0,50%);
+    width: 15px;
+    height: 20px;
+    border-radius: 3px;
+    background: #cbd5e0;
+}
+
+.project-option{
+    grid-area: option;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

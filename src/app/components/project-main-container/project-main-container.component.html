@@ -3,7 +3,7 @@
         <!-- Nav Lateral -->
         <div class="container-nav">
             <div class="nav-projects">
-                s
+                <button><i class="fas fa-plus"></i></button>
             </div>
         </div>
         <!-- Container -->
@@ -14,8 +14,7 @@
                     <h1>Projects</h1>
                     <!-- !!! Centrar el contenido de project-card -->
                     <div class="project-card">
-                        <div>1</div>
-                        <div>2</div>
+                        <div class="item" *ngFor="let project of projects"><project-card [project]="project"></project-card></div>
                     </div>
                 </div>
                 <!-- Project Description -->

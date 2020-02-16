@@ -1,59 +1,88 @@
-.bg-main{
-    width: 100%;
-    height: 100vh;
-    background-color: #cbd5e0;
+.bg-main {
+  width: 100%;
+  height: 100vh;
+  background-color: #cbd5e0;
 }
-.container-nav{
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
+.container-nav {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 
-    height: 90%;
-    width: 10%;
+  height: 90%;
+  width: 10%;
 }
-.container-master{
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%,-50%);
+.container-master {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
 
-    height: 90%;
-    width: 90%;
+  height: 90%;
+  width: 90%;
 }
-.nav-projects{
-    margin: 0 30px;
-    background-color: #edf2f7;
+.nav-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container-projects{
-    display: flex;
+.nav-projects > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 100%;
-    margin-right: 30px;
+  min-width: 50px;
+  min-height: 50px;
 
-    background-color: #f7fafc;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.project-list{
-    width: 35%;
-}
-.project-list > h1{
-    margin: 35px;
-    font-size: 21px;
-    color: #2d3748;
-}
-.project-card{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.project-card > div{
-    width: 30px;
-    background-color: red;
-}
-.project-description{
-    width: 65%;
-    height: 100%;
 
-    background-color: #edf2f7;
+  color: #4fd1c5;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: radial-gradient(circle, #f7fafc9c 10%, #ffffffa6 80%);
+  transition: all 0.6s ease;
+}
+.nav-projects > button:hover{
+  min-width: 60px;
+  min-height: 60px;
+  transform: translate(0,-5px) rotate(180deg);
+
+  font-size: 1.5rem;
+  background: radial-gradient(circle, #ffffff 10%, #f7fafc9c 80%);
+  box-shadow: 3px 3px 8px 2px  white, -3px -3px 8px 2px  #bac2ca;
+}
+.container-projects {
+  display: flex;
+
+  height: 100%;
+  margin-right: 30px;
+
+  background-color: #f7fafc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.project-list {
+  width: 35%;
+}
+.project-list > h1 {
+  margin: 35px;
+  font-size: 21px;
+  color: #2d3748;
+}
+.project-card {
+	display: flex;
+	flex-direction: column;
+}
+.project-card > .item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin: 8px 0;
+}
+.project-description {
+  width: 65%;
+  height: 100%;
+
+  background-color: #edf2f7;
 }
